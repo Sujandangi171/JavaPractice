@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean 
+	id="dao"
+ 	class="com.example.spring.di.literals.DataAccessObject"
+	init-method="init"
+	destroy-method="destroy"
+	scope="prototype"
+	>
+	<property name="url" value= "jdbc:mysql://localhost:3306/dursikshya"/>
+	<property name="driver" value= "com.mysql.cj.jdbc.Driver"/>
+	<property name="username" value= "username"/>
+	<property name="password" value= "password"/>
+	
+	
+	</bean>
+
+</beans>

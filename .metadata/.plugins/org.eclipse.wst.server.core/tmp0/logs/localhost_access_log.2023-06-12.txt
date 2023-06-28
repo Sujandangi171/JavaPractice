@@ -1,0 +1,12 @@
+127.0.0.1 - - [12/Jun/2023:22:08:25 +0545] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:08:30 +0545] "GET /myFirstWebApplication/ HTTP/1.1" 500 2205
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:08:31 +0545] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:10:36 +0545] "GET /myFirstWebApplication/index.jsp HTTP/1.1" 500 2205
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:10:36 +0545] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:12:48 +0545] "GET /myFirstWebApplication/index.jsp HTTP/1.1" 500 2225
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:15:50 +0545] "GET /myFirstWebApplication/index.jsp HTTP/1.1" 500 2202
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:16:20 +0545] "GET /myFirstWebApplication/index.jsp HTTP/1.1" 500 2202
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:17:50 +0545] "GET /myFirstWebApplication/index.jsp HTTP/1.1" 200 672
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:18:30 +0545] "POST /myFirstWebApplication/sessionHandler HTTP/1.1" 404 791
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:18:48 +0545] "GET /myFirstWebApplication/ HTTP/1.1" 200 721
+0:0:0:0:0:0:0:1 - - [12/Jun/2023:22:18:51 +0545] "POST /myFirstWebApplication/sessionHandler HTTP/1.1" 404 791

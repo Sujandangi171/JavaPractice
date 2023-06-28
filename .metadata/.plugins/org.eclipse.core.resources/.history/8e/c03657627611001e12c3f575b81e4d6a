@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:property-placeholder
+		location="application.properties" />
+
+	<bean id="product"
+		class="com.example.spring.di.objectInjection.Product">
+		<property name="id" value="123" />
+		<property name="name" value="Ballpens" />
+		<property name="price" value="15.12" />
+		<property name="category">
+			<bean class="com.example.spring.di.objectInjection.Category">
+				<property name="id" value="12" />
+				<property name="name" value="pens" />
+			</bean>
+		</property>
+	</bean>
+		<bean id="pd"
+		class="com.example.spring.di.objectInjection.Product" autowire="byName">
+		<property name="id" value="123" />
+		<property name="name" value="Ballpens" />
+		<property name="price" value="15.15" />
+		
+	</bean>
+
+	<bean id="catys"
+		class="com.example.spring.di.objectInjection.Category">
+		<property name="id" value="12" />
+		<property name="name" value="pens" />
+	</bean>
+	<bean id="category"
+		class="com.example.spring.di.objectInjection.Category">
+		<property name="id" value="2" />
+		<property name="name" value="notebooks" />
+	</bean>
+	<bean id="cat"
+		class="com.example.spring.di.objectInjection.Category">
+		<property name="id" value="3" />
+		<property name="name" value="Books" />
+	</bean>
+
+	
+
+</beans>

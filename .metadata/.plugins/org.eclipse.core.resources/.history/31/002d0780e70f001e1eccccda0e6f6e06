@@ -1,0 +1,15 @@
+package com.example.spring.di.literals;
+
+import lombok.Setter;
+import lombok.ToString;
+
+@ToString
+@Setter
+public class DataAccessObject {
+	String url;
+	String driver;
+	String username;
+	String password;
+	
+	
+}
